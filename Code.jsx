@@ -158,14 +158,55 @@ const { Component } = require("react")
 
 // link for navigation 
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-function Navbar() {
-  return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-    </nav>
-  );
-}
+// function Navbar() {
+//   return (
+//     <nav>
+//       <Link to="/">Home</Link>
+//       <Link to="/about">About</Link>
+//     </nav>
+//   );
+// }
+
+// Context API 
+
+// import { createContext, useContext, useState } from "react";
+
+// const ThemeContext = createContext();
+
+// function ThemeProvider({ children }) {
+//   const [theme, setTheme] = useState("light");
+
+//   return (
+//     <ThemeContext.Provider value={{ theme, setTheme }}>
+//       {children}
+//     </ThemeContext.Provider>
+//   );
+// }
+
+// function ChildComponent() {
+//   const { theme, setTheme } = useContext(ThemeContext);
+//   return (
+//     <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+//       Toggle Theme
+//     </button>
+//   );
+// }
+
+
+
+// Lazy Loading in React 
+
+// import React, { lazy, Suspense } from "react";
+
+// const HeavyComponent = lazy(() => import("./HeavyComponent"));
+
+// function App() {
+//   return (
+//     <Suspense fallback={<div>Loading...</div>}>
+//       <HeavyComponent />
+//     </Suspense>
+//   );
+// }
 
